@@ -18,7 +18,7 @@ We provide the code for our implementation of POLICEd RL on several systems:
 
 We illustrate POLICEd RL on a 2D system tasked with reaching a target location (cyan) without crossing a constraint line (red).
 In the repulsive buffer (green) the policy is affine and learns to point away from the constraint.
-![POLICEd RL learns to reach the target while avoiding the constraint](media/policed_2D.gif)
+![POLICEd RL learns to reach the target while avoiding the constraint](media/POLICEd_2D.gif)
 
 
 Kartik could you upload a GIF of the POLICEd KUKA arm?
