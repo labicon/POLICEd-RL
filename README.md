@@ -15,10 +15,10 @@ POLICEd RL guarantees that this KUKA robotic arm will never cross the red surfac
 
 
 We provide the code for our implementation of POLICEd RL on several systems:
--an illustrative 2D system
--the CartPole
--the Gymnasium Inverted Pendulum
--a KUKA robotic arm
+- an illustrative 2D system
+- the CartPole
+- the Gymnasium Inverted Pendulum
+- a KUKA robotic arm
 
 We illustrate POLICEd RL on a 2D system tasked with reaching a target location (cyan) without crossing a constraint line (red).
 In the repulsive buffer (green) the policy is affine and learns to point away from the constraint.
