@@ -133,7 +133,8 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        POLICEd RL . 
+        Kartik can you make a nice video of the POLICEd KUKA arm. The ones I have show the arm jerking a lot.
+        Maybe the video could show first CPO violating the constraint, then PPO-Barrier also violating and finally ours respecting the constraint.
       </h2>
     </div>
   </div>
@@ -150,7 +151,8 @@
           <p>
             In this paper, we seek to learn a robot policy guaranteed to satisfy state constraints.
             To encourage constraint satisfaction, existing RL algorithms typically rely on Constrained Markov Decision Processes and discourage constraint violations through reward shaping.
-            However, such <em>soft constraints</em> cannot offer safety guarantees. To address this gap, we propose <strong>POLICEd RL</strong>, a novel RL algorithm explicitly designed to enforce affine <em>hard constraints</em> in closed-loop with a black-box environment.
+            However, such <em>soft constraints</em> cannot offer safety guarantees.
+            To address this gap, we propose <strong>POLICEd RL</strong>, a novel RL algorithm explicitly designed to enforce affine <em>hard constraints</em> in closed-loop with a black-box environment.
             Our key insight is to make the learned policy be affine around the unsafe set and to use this affine region as a repulsive buffer to prevent trajectories from violating the constraint.
             We prove that such policies exist and guarantee constraint satisfaction.
             Our proposed framework is applicable to both systems with continuous and discrete state and action spaces and is agnostic to the choice of the RL training algorithm.
@@ -164,6 +166,36 @@
 <!-- End paper abstract -->
 
 
+
+<div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            Most safe RL works rely on reward shaping to discourage violations of a safety constraint.
+            However, such <em>soft constraints</em> do not guarantee safety.
+            Previous works trying to enforce <em>hard constraints</em> in RL typical suffer from two limitations:
+            either they need an accurate model of the environment, or their learned safety certificate only approximate without guarantees an actual safety certificate.
+          </p>
+          <p> 
+            On the other hand, our <strong>POLICEd RL</strong> approach can provably enforce hard constraint satisfaction in closed-loop with a black-box environment.
+            We build a repulsive buffer region in front of the constraint to prevent trajectories from approaching it.
+            Since trajectories cannot cross this buffer, they also cannot violate the constraint.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
