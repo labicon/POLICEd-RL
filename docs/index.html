@@ -177,7 +177,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-justified">
           <p>
             Most safe RL works rely on reward shaping to discourage violations of a safety constraint.
             However, such <em>soft constraints</em> do not guarantee safety.
@@ -189,14 +189,16 @@
             We build a repulsive buffer region in front of the constraint to prevent trajectories from approaching it.
             Since trajectories cannot cross this buffer, they also cannot violate the constraint.
           </p>
-          <img src="static/images/schema.png" alt="POLICEd RL illustration" height="300px"/>
-          <div class="subtitle has-text-centered">
+	</div>	
+        <img src="static/images/schema.png" alt="POLICEd RL illustration" height="300px"/>
+	<div class="content has-text-justified">
+          <p>
             Schematic illustration of POLICEd RL. To prevent state $s$ from violating an affine constraint represented by $Cs \leq d$,
             our POLICEd policy enforces $C\dot s \leq 0$ in buffer region $\mathcal{B}$ (<strong><span style="color:LightSeaGreen;">blue</span></strong>) directly below
             the unsafe area (<strong><span style="color:PaleVioletRed;">red</span></strong>).
             The POLICEd policy (arrows in the environment) is affine inside buffer region $\mathcal{B}$,
             which allows us to easily verify whether trajectories can violate the constraint.
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -215,39 +217,39 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <img src="static/images/KUKA-No-Buffer-1.png" alt="KUKA robotic arm" height="300px"/>
+        <img src="static/images/KUKA-No-Buffer-1.png" alt="KUKA robotic arm" height="300px" style="display:block; margin:auto;"/>
         <h2 class="subtitle has-text-centered">
           KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/KUKA-No-Buffer-2.png" alt="KUKA robotic arm" height="300px"/>
+        <img src="static/images/KUKA-No-Buffer-2.png" alt="KUKA robotic arm" height="300px" style="display:block; margin:auto;"/>
         <h2 class="subtitle has-text-centered">
           KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/KUKA-No-Buffer-3.png" alt="KUKA robotic arm" height="300px"/>
+        <img src="static/images/KUKA-No-Buffer-3.png" alt="KUKA robotic arm" height="300px" style="display:block; margin:auto;"/>
         <h2 class="subtitle has-text-centered">
          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
        </h2>
      </div>
      <div class="item">
-      <img src="static/images/KUKA-POLICEd-1.png" alt="KUKA robotic arm" height="300px"/>
+      <img src="static/images/KUKA-POLICEd-1.png" alt="KUKA robotic arm" height="300px" style="display:block; margin:auto;"/>
       <h2 class="subtitle has-text-centered">
         KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target.
         The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
       </h2>
     </div>
     <div class="item">
-      <img src="static/images/KUKA-POLICEd-2.png" alt="KUKA robotic arm" height="300px"/>
+      <img src="static/images/KUKA-POLICEd-2.png" alt="KUKA robotic arm" height="300px" style="display:block; margin:auto;"/>
       <h2 class="subtitle has-text-centered">
         KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target.
         The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
       </h2>
     </div>
     <div class="item">
-      <img src="static/images/KUKA-POLICEd-3.png" alt="KUKA robotic arm" height="300px"/>
+      <img src="static/images/KUKA-POLICEd-3.png" alt="KUKA robotic arm" height="300px" style="display:block; margin:auto;"/>
       <h2 class="subtitle has-text-centered">
         KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target.
         The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
@@ -263,14 +265,14 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
           <img src="static/images/comparison.png" alt="" height="400px"/>
-          <p class="subtitle has-text-centered">
-          	Metrics comparison for different methods based on a 500 episode deployment with the fully-trained policies on the safe arm task.
-          	We compare our POLICEd method against a TD3 baseline, a CPO soft-constraint, and a learned PPO-Barrier safety certificate.
-          	The completion task only assess whether the target is eventually reached, even if the constraint is not properly respected.
-          	For all metrics higher is better (&uarr;). 
-          </p>
+          <div class="content has-text-justified">
+            <p>
+              Metrics comparison for different methods based on a 500 episode deployment with the fully-trained policies on the safe arm task.
+              We compare our POLICEd method against a TD3 baseline, a CPO soft-constraint, and a learned PPO-Barrier safety certificate.
+              The completion task only assess whether the target is eventually reached, even if the constraint is not properly respected.
+              For all metrics higher is better (&uarr;). 
+            </p>
         </div>
       </div>
     </div>
