@@ -50,6 +50,25 @@
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
+
+  <style>
+    /* Ordered reference list in blog posts with counter in [] */
+	ol.custom-marker {
+	  counter-reset: list;
+	}
+	
+	ol.custom-marker > li {
+	  list-style: none;
+	  counter-increment: list;
+	}
+	
+	ol.custom-marker.parens-after.decimal > li::marker {
+	  content: "[" counter(list) "]\a0\a0\a0";
+	}
+	.reference {
+	   margin-bottom: 3mm;
+	}
+  </style>
 </head>
 <body>
 
@@ -194,9 +213,9 @@
 	<div class="content has-text-justified">
           <p>
             Schematic illustration of POLICEd RL. To prevent state $s$ from violating an affine constraint represented by $Cs \leq d$,
-            our POLICEd policy enforces $C\dot s \leq 0$ in buffer region $\mathcal{B}$ (<strong><span style="color:LightSeaGreen;">blue</span></strong>) directly below
+            our POLICEd policy (arrows in the environment) enforces $C\dot s \leq 0$ in buffer region $\mathcal{B}$ (<strong><span style="color:LightSeaGreen;">blue</span></strong>) directly below
             the unsafe area (<strong><span style="color:PaleVioletRed;">red</span></strong>).
-            The POLICEd policy (arrows in the environment) is affine inside buffer region $\mathcal{B}$,
+            We use the <a href="#POLICE">POLICE</a> algorithm to make our policy affine inside buffer region $\mathcal{B}$,
             which allows us to easily verify whether trajectories can violate the constraint.
           </p>
         </div>
@@ -218,42 +237,60 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <img src="static/images/KUKA-No-Buffer-1.png" alt="KUKA robotic arm" style="height:400px !important; display:block !important; margin:auto !important;"/>
-        <h2 class="subtitle has-text-centered">
-          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
-        </h2>
+        <div class="columns is-centered has-text-centered">
+	 <p>
+          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target <br>
+	  while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
+	 </p>
+        </div>
       </div>
       <div class="item">
         <img src="static/images/KUKA-No-Buffer-2.png" alt="KUKA robotic arm" style="height:400px !important; display:block !important; margin:auto !important;"/>
-        <h2 class="subtitle has-text-centered">
-          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
-        </h2>
+        <div class="columns is-centered has-text-centered">
+	 <p>
+          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target <br>
+	  while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
+	 </p>
+        </div>
       </div>
       <div class="item">
         <img src="static/images/KUKA-No-Buffer-3.png" alt="KUKA robotic arm" style="height:400px !important; display:block !important; margin:auto !important;"/>
-        <h2 class="subtitle has-text-centered">
-         KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
-       </h2>
+        <div class="columns is-centered has-text-centered">
+	 <p>
+          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target <br>
+	  while avoiding <strong><span style="color:red;">red</span></strong> constraint area.
+	 </p>
+        </div>
      </div>
      <div class="item">
       <img src="static/images/KUKA-POLICEd-1.png" alt="KUKA robotic arm" style="height:400px !important; display:block !important; margin:auto !important;"/>
-      <h2 class="subtitle has-text-centered">
-        KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target.
-        The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
-      </h2>
+      <div class="columns is-centered has-text-centered">
+	 <p>
+          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target. <br>
+          The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer <br>
+	  to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
+         </p>
+	</div>
     </div>
     <div class="item">
       <img src="static/images/KUKA-POLICEd-2.png" alt="KUKA robotic arm" style="height:400px !important; display:block !important; margin:auto !important;"/>
-      <h2 class="subtitle has-text-centered">
-        KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target.
-        The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
-      </h2>
+       <div class="columns is-centered has-text-centered">
+	 <p>
+          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target. <br>
+          The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer <br>
+	  to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
+         </p>
+	</div>
     </div>
     <div class="item">
       <img src="static/images/KUKA-POLICEd-3.png" alt="KUKA robotic arm" style="height:400px !important; display:block !important; margin:auto !important;"/>
-      <h2 class="subtitle has-text-centered">
-        KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target.
-        The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
-      </h2>
+      <div class="columns is-centered has-text-centered">
+ 	<p>
+          KUKA robotic arm reaching for <strong><span style="color:green;">green</span></strong> target. <br>
+          The POLICEd policy creates a <strong><span style="color:cyan;">cyan</span></strong> repulsive buffer <br>
+	  to avoid the <strong><span style="color:red;">red</span></strong> constraint area.
+         </p>
+      </div>
     </div>
   </div>
 </div>
@@ -265,12 +302,20 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
+	<div class="content has-text-justified">
+            <p>
+              We implement POLICEd RL on the 7 degrees of freedom KUKA arm and train it to reach a target while avoiding a constraint area as illustrated above.
+	      We use the classic RL algorithm Twin Delayed DDPG <a href="#TD3">(TD3)</a> with POLICEd layers.
+	      We compare our POLICEd method against a TD3 baseline, a Constrained Policy Optimization <a href="#CPO">(CPO)</a> soft-constraint algorithm,
+	      and a learned <a href="yang2023model">PPO-Barrier</a> safety certificate.
+            </p>
+        </div>
           <img src="static/images/comparison.png" alt="" height="400px"/>
           <div class="content has-text-justified">
             <p>
               Metrics comparison for different methods based on a 500 episode deployment with the fully-trained policies on the safe arm task.
-              We compare our POLICEd method against a TD3 baseline, a CPO soft-constraint, and a learned PPO-Barrier safety certificate.
-              The completion task only assess whether the target is eventually reached, even if the constraint is not properly respected.
+              The completion task only assess whether the target is eventually reached, even if the constraint is not respected.
+	      The most significant metric is the average percentage of constraint satisfaction, which shows that only POLICEd RL guarantees constraint satisfaction. 
               For all metrics higher is better (&uarr;). 
             </p>
         </div>
@@ -367,7 +412,50 @@
 </section>
 <!--End BibTex citation -->
 
+<!--References -->
+<section class="section hero is-small">
+  <div class="container">
+    <h2 class="title is-3">References</h2>
+    <div class="columns is-centered">
+      <div class="column is-8">
+	<div class="content">
+          <ol class='custom-marker parens-after decimal'>
+	    <li>
+	      <div class="reference" id="CPO">
+		Joshua Achiam, David Held, Aviv Tamar, and Pieter Abbeel,
+		<a href="https://proceedings.mlr.press/v70/achiam17a" target="_blank" rel="noopener noreferrer">Constrained Policy Optimization</a>,
+		34th International Conference on Machine Learning (ICML), 2017.
+	      </div>
+	    </li>
+	    <li>
+	      <div class="reference" id="POLICE">
+		Randall Balestriero and Yann LeCun,
+		<a href="https://ieeexplore.ieee.org/abstract/document/10096520" target="_blank" rel="noopener noreferrer"> POLICE: Provably optimal linear constraint enforcement for deep neural networks</a>,
+		IEEE International Conference on Acoustics, Speech and Signal Processing, 2023.
+	      </div>
+	    </li>
+	    <li>
+	      <div class="reference" id="TD3">
+		Scott Fujimoto, Herke Hoof, and David Meger,
+		<a href="https://proceedings.mlr.press/v80/fujimoto18a.html" target="_blank" rel="noopener noreferrer">Addressing function approximation error in actor-critic methods</a>,
+		International Conference on Machine Learning (ICML), 2018.
+	      </div>
+	    </li>
+	    <li>
+	      <div class="reference" id="yang2023model">
+		Yujie Yang, Yuxuan Jiang, Yichen Liu, Jianyu Chen, and Shengbo Eben Li,
+		<a href="https://ieeexplore.ieee.org/document/10023989" target="_blank" rel="noopener noreferrer">Model-free safe reinforcement learning through neural barrier certificate</a>,
+		IEEE Robotics and Automation Letters, 2023.
+	      </div>
+	    </li>
+	  </ol>  
+	</div>
+      </div>
+    </div>
+  </div>
+</section>
 
+	
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
