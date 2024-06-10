@@ -1,0 +1,21 @@
+Thu Feb  1 20:11:00 2024
+WARNING: mju_openResource: unknown file '../../../robotic-arm-model/scene.xml'
+
+Thu Feb  1 20:11:35 2024
+WARNING: mju_openResource: unknown file '../../../../robotic-arm-model/scene.xml'
+
+Thu Feb  1 20:17:34 2024
+WARNING: mju_openResource: unknown file '/c/Users/Kartik/My Drive (kartiknagpal@berkeley.edu)/ResearchCode/graph-transformer-tamp/robotic-arm-model/scene.xml'
+
+Thu Feb  1 20:18:18 2024
+WARNING: mju_openResource: unknown file '/c/Users/Kartik/My Drive (kartiknagpal@berkeley.edu)/ResearchCode/graph-transformer-tamp/robotic-arm-model/scene.xml'
+
+Thu Feb  1 20:20:05 2024
+WARNING: mju_openResource: unknown file '/c/Users/Kartik/Documents/1/robotic-arm-model/scene.xml'
+
+Thu Feb  1 20:20:26 2024
+WARNING: mju_openResource: unknown file '/c/Users/Kartik/Documents/1/robotic-arm-model/scene.xml'
+
+Wed Apr  3 02:02:29 2024
+WARNING: mju_openResource: unknown file 'C:/Users/Kartik/Documents/1/robotic-arm-model/test_scene.xml'
+

@@ -1,0 +1,90 @@
+Thu Feb  1 01:01:19 2024
+WARNING: mju_openResource: unknown file './robotic-arm-model/scene.xml'
+
+Thu Feb  1 19:24:10 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 13179.9240.
+
+Thu Feb  1 19:35:31 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Thu Feb  1 19:36:38 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Fri Feb  2 00:35:03 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Fri Feb  2 01:05:39 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 13179.9240.
+
+Fri Feb  2 08:35:20 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Fri Feb  2 09:34:55 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 10739.9260.
+
+Fri Feb  2 14:45:15 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 10739.9260.
+
+Fri Feb  2 17:08:36 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 10739.9260.
+
+Fri Feb  2 19:06:22 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 10739.9260.
+
+Fri Feb  2 20:29:08 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 10739.9260.
+
+Sat Feb  3 00:35:50 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 10739.9260.
+
+Sun Feb  4 16:46:53 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 09:20:12 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:20:44 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:21:21 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:23:07 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:24:26 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:25:10 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:26:40 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:28:56 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:29:36 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:30:33 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:32:55 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:35:29 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0840.
+
+Mon Apr  1 10:36:21 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:40:48 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 10:42:03 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
+Mon Apr  1 18:30:20 2024
+WARNING: Nan, Inf or huge value in QPOS at DOF 0. The simulation is unstable. Time = 0.0020.
+
