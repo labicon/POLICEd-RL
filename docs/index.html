@@ -153,13 +153,12 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/POLICEd_KUKA.mp4"
-        type="video/mp4">
+        <source src="static/videos/KUKA.mp4" type="video/mp4">
       </video>
       <h4 class="subtitle has-text-centered">
-        Kartik can you make a nice video of the POLICEd KUKA arm. The ones I have show the arm jerking a lot.
-        Maybe the video could show first CPO violating the constraint, then PPO-Barrier also violating and finally ours respecting the constraint.
+        KUKA robotic arm tasked with reaching a <strong><span style="color:green;">green</span></strong> target while avoiding a <strong><span style="color:red;">red</span></strong> constraint area.<br>
+        Using only reward shaping or soft constraints like Constrained Policy Optimization (CPO) does not bring any safety guarantees. <br>
+	On the other hand, our <strong>POLICEd</strong> approach <em>guarantees</em> constraint satisfaction.
       </h4>
     </div>
   </div>
@@ -191,7 +190,24 @@
 <!-- End paper abstract -->
 
 
-<section class="section hero is-small">
+<!-- Presentation video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/Presentation.mp4" type="video/mp4">
+      </video>
+      <h4 class="subtitle has-text-centered">
+        Presentation given at RSS 2024.
+      </h4>
+    </div>
+  </div>
+</section>
+
+
+
+	
+<section class="section hero is-light">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -230,7 +246,7 @@
 
   
 <!-- Image carousel -->
-<section class="hero is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -285,7 +301,7 @@
 </section>
 <!-- End image carousel -->
 
-<section class="section hero is-small">
+<section class="section hero is-light">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
