@@ -30,14 +30,13 @@ In the repulsive buffer (green) the policy is affine and learns to point away fr
 
 
 ## Organization
-- [POLICEdRL](POLICEdRL) contains the project source code
-- [scripts/examples.py](run/examples.py) provides several examples that exercise many
-  aspects of the library.
+- [POLICEdRL](POLICEdRL) contains the project source code,
+- [docs](docs) contains the code for our website.
 
 
 
 ## Credit
-The following repositories have been instrumental from both an algorithms and
+The following repositories have been instrumental from both an algorithm and
 software architecture perspective in the development of this project:
 - [RandallBalestriero/POLICE](https://github.com/RandallBalestriero/POLICE)
 - [jachiam/CPO](https://github.com/jachiam/cpo)
