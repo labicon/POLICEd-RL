@@ -27,19 +27,6 @@ In the repulsive buffer (green) the policy is affine and learns to point away fr
 
 
 
-## Installation
-
- After cloning the repo, one must first install all necessary dependencies (ideally
- into an environment). Then, one can run the following with the environment activated:
-
-        pip install -e .
-
- This will install an editable version of the package into the local environment. To
- ensure it worked, navigate to any directory and run:
-
-	    python -c "import dpilqr; print(dpilqr.util.repopath)"
-
- This should print out the top level of the repository.
 
 
 ## Organization
@@ -47,9 +34,6 @@ In the repulsive buffer (green) the policy is affine and learns to point away fr
 - [scripts/examples.py](run/examples.py) provides several examples that exercise many
   aspects of the library.
 
-
-## Features
-* 
 
 
 ## Credit
